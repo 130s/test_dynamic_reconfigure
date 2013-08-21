@@ -15,7 +15,7 @@ find_package(catkin REQUIRED COMPONENTS dynamic_reconfigure roscpp rospy)
 #add dynamic reconfigure api
 find_package(catkin REQUIRED dynamic_reconfigure)
 generate_dynamic_reconfigure_options(
-  cfg/test_reconfigure.cfg
+  cfg/test_reconfigure.cfg cfg/test_reconfigure_chad.cfg
 )
 # make sure configure headers are built before any node using them
 #add_dependencies(example_node ${PROJECT_NAME}_gencfg) 
